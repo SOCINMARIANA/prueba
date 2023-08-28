@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store de Ropa</title>
+    <link rel="shortcut icon" href="./imagenes/fusion.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <header class="header">
+        <img class="logo1" src="./imagenes/fusion.png" alt="logo fusion" title="fusion store de ropa"/>
+        <img class="logo2" src="./imagenes/fusion-var.png" alt="logo fusion" title="fusion store de ropa"/>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav-menu visible" id="nav-menu">
+          <button id="cerrar" class="cerrar-menu" ><i class="bi bi-x"></i></button>
+          <ul class="nav">
+            <li class="nav-item1"><a class="nav-link" href="./index.html">INICIO</a></li>
+            <li class="nav-item2"><a class="nav-link" href="./paginas/mujer.html">MUJER</a></li>
+            <li class="nav-item3"><a class="nav-link" href="./paginas/hombre.html">HOMBRE</a></li>
+            <li class="nav-item4"><a class="nav-link" href="./paginas/junior.html">JUNIOR</a></li>
+            <li class="nav-item5"><a class="nav-link" href="./paginas/contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section id="mujer" class="mujer">
+        <div class="conteiner">
+            <img class="mujerImagen" src="./imagenes/inicio-mujer.png" alt="foto de mujer">
+            <div class="interior">
+                <h2>ESPACIO MUJER</h2>
+                <p>Lorem ipsum dolor sit amet <br> Numquam alias provident commodi</p>
+                <a target="_blank" class="boton" href="./paginas/mujer.html">VER EN MUJERES</a> 
+            </div>
+        </div> 
+      </section>
+      <section id="hombre" class="hombre">
+        <div class="conteinerHombre">
+            <div class="interiorHombre">
+                <h2>ESPACIO HOMBRE</h2>
+                <p>Lorem ipsum dolor sit amet <br> Numquam alias provident commodi</p>
+                <a target="_blank" class="botonHombre" href="./paginas/hombre.html">VER EN HOMBRE</a> 
+            </div>
+            <img class="hombreImagen" src="./imagenes/inicio-hombre.png" alt="foto de hombre">
+        </div> 
+      </section>
+      <section id="junior" class="junior">
+        <div class="conteinerJunior">
+          <img class="juniorImagen" src="./imagenes/inicio-junior.png" alt="foto de junior">
+            <div class="interiorJunior">
+                <h2>ESPACIO JUNIOR</h2>
+                <p>Lorem ipsum dolor sit amet <br> Numquam alias provident commodi</p>
+                <a target="_blank" class="botonJunior" href="./paginas/junior.html">VER EN JUNIOR</a> 
+            </div>
+        </div> 
+        <section id="formulario" class="formulario">
+          <div class="conteinerFormulario">
+              <h2 class="formulario-titulo">Suscribite</h2>
+              <p class="formulario-texto"> Y recibi informacion sobre lanzamientos, promociones y todo tipo de novedades!</p>
+              <form class="formulario1">
+                <input class="input-neutro" type="Tu Email" placeholder="Email" />
+                <input class="input-color" value="ENVIAR" type="submit"/>
+              </form>
+          </div>
+        </section>
+    </main>
+    <footer class="seccion-footer">
+      <div class="conteiner-footer">
+        <div class="footer-interior">
+
+          <h2 class="social-titulo">SEGUINOS</h2>
+          <div class="social-icono">
+           <a target="_blank" href="https://www.instagram.com/fusionhm/"><i class="bi bi-instagram"></i></a>
+           <a target="_blank" href="https://www.facebook.com/fusionunisex.hm"><i class="bi bi-facebook"></i></a>
+         </div>
+       </div>
+          <img class="logo" src="./imagenes/fusion.png" alt="logo fusion" title="fusion store de ropa"/>
+          <div class="footer-copy">
+            <p class="texto-copy"> &copy; 2023 / Todos los derechos reservados.</p>
+          </div>
+      </div>
+     
+    </footer>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
