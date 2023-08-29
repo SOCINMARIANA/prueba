@@ -748,24 +748,25 @@ body {
   grid-template-areas: 
          "imagen-1  contactoUbicanos  imagen-2"
          "contactoTelefono  imagen-3 contactoCorreo";  
-         gap: 10px;    
+         column-gap: 10px; 
+         row-gap: 10px;   
+  order: 0;
 }
 
 .imagen-1 {
   background-image: url(./imagenes/contacto.png);
-  background-position: center;
+  
   background-size: cover;
   grid-area: imagen-1;
 }
 .imagen-2 {
-  background-image: url(./imagenes/contacto.png);
-  background-position: center;
+  background-image: url(./imagenes/contacto2.jpg);
+ 
   background-size: cover;
   grid-area: imagen-2;
 }
 .imagen-3 {
-  background-image: url(./imagenes/contacto.png);
-  background-position: center;
+  background-image: url(./imagenes/contacto3.png);
   background-size: cover;
   grid-area: imagen-3;
 }
@@ -776,6 +777,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #FF99C9;
+  order: 0;
 }
 
 .contactoTelefono {
@@ -785,6 +787,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #fa5aa7;
+  order: 0;
 }
 .contactoCorreo {
   grid-area: contactoCorreo;
@@ -793,6 +796,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #fa5aa7;
+  order: 0;
 }
 
 .contactoUbicanos i {
@@ -1001,6 +1005,7 @@ body {
 
 
 
+
   .conteiner,
   .conteinerHombre,
   .conteinerJunior {
@@ -1038,6 +1043,7 @@ body {
 
 .interior-contacto {
   height: 100%;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
@@ -1045,9 +1051,10 @@ body {
          "contactoUbicanos" 
          "contactoTelefono" 
          "contactoCorreo";  
-         gap: 10px;      
+         column-gap: 0px; 
+         row-gap: 10px;                  
 }
-.imagen-1{
- object-fit: contain;
- height: 100vh;
+
+
+
 }
