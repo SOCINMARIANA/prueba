@@ -1055,6 +1055,8 @@ body {
          row-gap: 10px;                  
 }
 
-
+.imagen-1 {
+ justify-content: center;
+}
 
 }
