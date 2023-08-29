@@ -363,6 +363,7 @@ body {
   align-items: center;
   text-align: center;
   
+  
 }
 .hombreImagen {
   max-width: 60%;
@@ -715,69 +716,126 @@ body {
   opacity: 1;
 }
 
-.conteiner-contacto{
+.contactoTitulo {
+  background-color: rgb(236, 226, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10PX 0 0 0;
+}
+
+.contactoTitulo h2 {
+  font-size: 70px;
+  color: #ED0875;
+}
+.contactoTitulo p {
+  font-size: 25px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.interior-contacto {
+  margin: 10px 0 10px 0;
+}
+
+.interior-contacto {
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-         "titulo-contacto  titulo-contacto  imagen-contacto"
-         "info-contacto  info-contacto imagen-contacto";  
+         "imagen-1  contactoUbicanos  imagen-2"
+         "contactoTelefono  imagen-3 contactoCorreo";  
          gap: 10px;    
 }
-.conteiner-contacto > div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 10px;
-}
 
-.titulo-contacto  {
-  grid-area: titulo-contacto;
-  width: 100%;
-  flex-direction: column;
-  text-align: center;
-}
-.info-contacto {
-  grid-area: info-contacto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: #90caf1;
-}
-.info-contacto > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.imagen-contacto {
+.imagen-1 {
   background-image: url(./imagenes/contacto.png);
   background-position: center;
   background-size: cover;
-  grid-area: imagen-contacto;
-  width: 100%;
-  background-color: #080808;
-  display: none;
-  overflow: hidden;
+  grid-area: imagen-1;
 }
-.titulo-contacto h2 {
-  font-size: 50px;
-  color: #ED0875;
+.imagen-2 {
+  background-image: url(./imagenes/contacto.png);
+  background-position: center;
+  background-size: cover;
+  grid-area: imagen-2;
 }
-.titulo-contacto p {
-  font-size: 20px;
-  background-color: #000000;
+.imagen-3 {
+  background-image: url(./imagenes/contacto.png);
+  background-position: center;
+  background-size: cover;
+  grid-area: imagen-3;
+}
+.contactoUbicanos {
+  grid-area: contactoUbicanos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FF99C9;
+}
+
+.contactoTelefono {
+  grid-area: contactoTelefono;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fa5aa7;
+}
+.contactoCorreo {
+  grid-area: contactoCorreo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fa5aa7;
+}
+
+.contactoUbicanos i {
+  font-size: 60px;
   color: white;
- margin-bottom: 10px;
- overflow: hidden;
- padding: 10px 30px;
 }
+.contactoUbicanos p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.contactoTelefono i {
+  font-size: 60px;
+  color: white;
+}
+.contactoTelefono p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.contactoCorreo i {
+  font-size: 60px;
+  color: white;
+}
+.contactoCorreo p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.contactoCorreo h3 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.contactoUbicanos h3 {
+  text-decoration: underline;
+}
+.contactoTelefono h3 {
+  text-decoration: underline;
+}
+
 
 
 
@@ -803,6 +861,7 @@ body {
 
   .cerrar-menu {
       color: #ececec;
+      
   }
 
   .nav-menu {
@@ -820,21 +879,27 @@ body {
       padding: 2rem;
       box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
       z-index: 2;
+     
+  
   }
 
   .nav-menu.visible {
       opacity: 1;
       visibility: visible;
+     
   }
  
   .nav {
       flex-direction: column;
       align-items: end;
+      
   }
 
   .nav li a {
       color: #ecececec;
   }
+  
+
 
 .conteiner,
 .conteinerHombre,
@@ -962,26 +1027,27 @@ body {
     flex-direction: column;
   }
 
-  .conteiner-contacto {
-    display: flex;
-        flex-direction: column;
-        row-gap: 5px
-
-  }
  
-
-
  
-
  
-  .conteiner-contacto  > * {
-        flex: 1;
-    
-    }
-  
 
 
 .hombreImagen {
   order: -1;
 }
+
+.interior-contacto {
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+         "imagen-1"
+         "contactoUbicanos" 
+         "contactoTelefono" 
+         "contactoCorreo";  
+         gap: 10px;      
+}
+.imagen-1{
+ object-fit: contain;
+ height: 100vh;
 }
