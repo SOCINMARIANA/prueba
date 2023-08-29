@@ -1048,8 +1048,8 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
          "imagen-1"
-         "contactoUbicanos" 
          "contactoTelefono" 
+         "contactoUbicanos" 
          "contactoCorreo";  
          column-gap: 0px; 
          row-gap: 10px;                  
