@@ -322,6 +322,7 @@ body {
     padding:10px 20px;
     background:white;
     font-size:20px;
+    
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
     transition:all 1s;
@@ -716,6 +717,10 @@ body {
   opacity: 1;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(50%);
+}
+
 .contactoTitulo {
   background-color: rgb(236, 226, 226);
   display: flex;
@@ -853,7 +858,7 @@ body {
   .cerrar-menu {
       display: block;
       border: 0;
-      font-size: 3rem;
+      font-size: 2.5rem;
       background-color: transparent;
       cursor: pointer;
   }
@@ -1001,46 +1006,101 @@ body {
   
 
 @media screen and (max-width: 480px) {
-
-
-
-
-
-
+  .header {
+    padding: 0.5rem;
+  }
+  .logo1 {
+    max-width: 5rem;
+    margin: 10px;
+  }
   .conteiner,
   .conteinerHombre,
   .conteinerJunior {
     flex-direction: column;
   }
+  .conteiner {
+    padding: 20px 40px 20px 40px;
+  }
   .mujerImagen{
-    max-width: 100%;
+    max-width: 110%;
     margin-bottom: 30px;
   }
+  .conteiner h2 {
+    font-size: 35px;
+  }
   .conteiner p {
-    font-size: 20px;
+     font-size: 23px;
   }
-  .boton {
-    padding: 10px 10px;
+  .conteinerHombre p{
+    font-size: 22px;
   }
-  .botonHombre {
-    padding: 10px 10px;
+  .conteinerJunior p {
+    font-size: 23px;
+  }
+  .boton,
+  .botonHombre,
+  .botonJunior {
+    padding: 15px 15px;
+    font-size: 16px;
+  }
+  .conteinerHombre {
+    padding: 10px;
+  }
+  .conteinerHombre h2 {
+    font-size: 32px;
+  }
+  .hombreImagen {
+    order: -1;
   }
   .hombreImagen {
     max-width: 100%;
     margin: 30px;
   }
+  .juniorImagen {
+    max-width: 110%;
+    margin: 30px;
+  }
+  .conteinerJunior h2 {
+    font-size: 32px;
+  }
+  .conteinerFormulario p {
+    font-size: 23px;
+    margin: 20px 0px 25px 0px;
+  }
+  .conteinerFormulario h2 {
+    margin-top: 10px;
+  }
+  .conteinerFormulario {
+    padding: 10px 10px 20px 10px;
+  }
+  
+
+
+  
+
+
+
+
+
+
+
+
   .conteiner-footer {
     flex-direction: column;
   }
+  .logo {
+    margin: 20px;
+  }
 
+ .footer-interior h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+ }
  
  
- 
 
 
-.hombreImagen {
-  order: -1;
-}
+
 
 .interior-contacto {
   height: 100%;
