@@ -601,9 +601,8 @@ body {
 .slide img {
   max-width: 200%;
   object-fit: cover;
-  max-height: 80vh;
   object-position: center;
-
+ 
 }
 .seccion-interior-mujer,
 .seccion-interior-hombre,
@@ -718,7 +717,7 @@ body {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  filter: invert(50%);
+  filter: invert(40%);
 }
 
 .contactoTitulo {
@@ -1073,6 +1072,55 @@ body {
   .conteinerFormulario {
     padding: 10px 10px 20px 10px;
   }
+  .seccion-interior-mujer p,
+  .seccion-interior-hombre p,
+  .seccion-interior-junior p {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 8px 20px 8px;
+  }
+
+  .seccion-interior-mujer h2,
+  .seccion-interior-hombre h2,
+  .seccion-interior-junior h2{
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+  }
+  .contenedor-interior img {
+    max-width: 3000px;
+  }
+  
+.carousel-inner {
+    margin: 20px AUTO;
+}
+
+.interior-contacto {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+         "imagen-1"
+         "contactoTelefono"
+         "imagen-2" 
+         "contactoUbicanos"
+         "imagen-3" 
+         "contactoCorreo";  
+         column-gap: 0px; 
+         row-gap: 10px;                  
+}
+.contactoTitulo p {
+  text-align: center;
+  margin: 10px 15px 10px 15px;
+  font-size: 23px;
+}
+.contactoTitulo h2 {
+  margin: 10px 15px 10px 15px;
+  font-size: 55px;
+}
+  
+  
   
 
 
@@ -1102,21 +1150,7 @@ body {
 
 
 
-.interior-contacto {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-         "imagen-1"
-         "contactoTelefono"
-         "imagen-2" 
-         "contactoUbicanos"
-         "imagen-3" 
-         "contactoCorreo";  
-         column-gap: 0px; 
-         row-gap: 10px;                  
-}
+
 
 
 }
