@@ -298,18 +298,15 @@ body {
   }
 .conteiner h2 {
     font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background: linear-gradient(45deg, #ED0875, #f7a0c8);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    width: 100%;
   }
 .conteiner p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     color: #000000;
     font-size: 35px;
     margin-inline: 50px;
@@ -378,6 +375,7 @@ body {
 }
 .conteinerHombre h2 {
   font-size: 40px;
+  text-align: center;
   background: linear-gradient(45deg, #545454, #b8b6b6);
   -webkit-background-clip: text;
   background-clip: text;
@@ -386,6 +384,7 @@ body {
 .conteinerHombre p {
   color: #000000;
   font-size: 35px;
+  text-align: center;
   margin-inline: 50px;
   margin: 40px 28px 60px 28px;
 }
@@ -619,7 +618,6 @@ body {
   align-items: center;
   flex-direction: column;
   order: 0;
-    
  
   
 }
@@ -629,9 +627,9 @@ body {
     font-size: 30px;
     color: #000000;
     margin-inline: 50px;
-    margin: 20px 0px 20px 0px;
     order: 0;
-   
+    margin: 20px auto;
+    text-align: center;
 }
 .seccion-interior-mujer h2 {
     font-size: 50px;
@@ -1025,14 +1023,14 @@ body {
     flex-direction: column;
   }
   .conteiner {
-    padding: 20px 40px 20px 40px;
+    padding: 30px;
   }
   .mujerImagen{
     max-width: 110%;
     margin-bottom: 30px;
   }
   .conteiner h2 {
-    font-size: 35px;
+    font-size: 32px;
   }
   .conteiner p {
      font-size: 23px;
