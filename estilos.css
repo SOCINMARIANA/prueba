@@ -618,9 +618,13 @@ body {
   align-items: center;
   flex-direction: column;
   order: 0;
- 
-  
+  margin: 20px auto;
 }
+
+.carousel {
+  margin: 10px;
+}
+
 .seccion-interior-mujer,
 .seccion-interior-hombre,
 .seccion-interior-junior p {
@@ -698,6 +702,7 @@ body {
 .interiorJunior {
   position: relative;
   max-width: 100%;
+  margin: 10px;
  
  
 
