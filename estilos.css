@@ -530,6 +530,7 @@ body {
   background-color: white;
   color: #b8b6b6;
   outline: none;
+  width: calc(100% - 26px);
 }
 .input-color {
   font-size: 20px;
@@ -541,6 +542,7 @@ body {
   align-items: center;
   background-color: #fa5aa7;
   color: white;
+  width: calc(100% - 32px);
 }
 .seccion-footer {
   background-color:  #FF99C9;
