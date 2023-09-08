@@ -625,14 +625,13 @@ body {
   margin: 10px;
 }
 
-.seccion-interior-mujer,
-.seccion-interior-hombre,
+.seccion-interior-mujer p,
+.seccion-interior-hombre p,
 .seccion-interior-junior p {
     font-size: 30px;
     color: #000000;
-    margin-inline: 50px;
+    margin-inline: 40px;
     order: 0;
-    margin: 20px auto;
     text-align: center;
 }
 .seccion-interior-mujer h2 {
@@ -725,6 +724,7 @@ body {
 .interiorJunior:hover .overlay {
   opacity: 1;
 }
+
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   filter: invert(40%);
@@ -861,8 +861,8 @@ body {
 
 
 @media screen and (max-width: 768px) {
-
-
+  
+   
   .abrir-menu,
   .cerrar-menu {
       display: block;
@@ -979,10 +979,12 @@ body {
   font-size: 23px;
 } 
 .seccion-interior-hombre p {
-  font-size: 20px;
+  font-size: 23px;
+  margin: 0px 25px 16px 25px;
 } 
 .seccion-interior-junior p {
-  font-size: 22px;
+  font-size: 23px;
+  margin: 0px 25px 16px 25px;
 } 
 .seccion-interior-mujer h2,
 .seccion-interior-hombre h2 {
@@ -995,7 +997,7 @@ body {
   font-size: 15px;
 } 
 .contenedor-interior img {
-  width: 300px;
+  max-width: 300px;
 } 
 .contenedor-interior > 
 .detalleHombre {
@@ -1010,6 +1012,26 @@ body {
 .card-text {
   font-size: 14px;
 }
+
+.interior-contacto {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+         "imagen-1  contactoTelefono"
+         "contactoUbicanos  imagen-2" 
+         "imagen-3  contactoCorreo";  
+         column-gap: 0px; 
+         row-gap: 10px;                  
+}
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+
+
 
 }
   
@@ -1104,6 +1126,12 @@ body {
 .carousel-inner {
     margin: 20px AUTO;
 }
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
 
 .interior-contacto {
   height: 100%;
