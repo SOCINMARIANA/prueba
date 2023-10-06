@@ -45,10 +45,9 @@ p {
 .header:hover .logo1 {
     display: none;
 }
-.header:hover .logo2 {
+.header:hover  .logo2 {
     display: block;
-    justify-content: space-between;
-    align-items: center;
+    
 }
 .logo1 {
     max-width: 6rem;
@@ -66,6 +65,7 @@ p {
     gap: 1.5rem;
     margin-right: 24px;
 }
+
 ul {
     list-style-type: none;
 }
@@ -550,6 +550,7 @@ body {
 }
 .seccion-footer {
   background-color:  #FF99C9;
+  background-image: radial-gradient(circle at right top, #f876b5, #ED0875);
 }
 
 .conteiner-footer {
@@ -741,7 +742,7 @@ body {
 
 .contactoTitulo h2 {
   font-size: 70px;
-  color: #ED0875;
+  color:  #FF99C9;
 }
 .contactoTitulo p {
   font-size: 25px;
@@ -789,7 +790,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #FF99C9;
+  background-color: #b8b6b6;
   order: 0;
 }
 
@@ -799,7 +800,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fa5aa7;
+  background-color: #FF99C9;
   order: 0;
 }
 .contactoCorreo {
@@ -808,7 +809,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fa5aa7;
+  background-color: #7fb3d6;
   order: 0;
 }
 
@@ -1090,6 +1091,9 @@ body {
   .juniorImagen {
     max-width: 110%;
     margin: 30px;
+  }
+  .conteinerJunior {
+    padding: 30px;
   }
   .conteinerJunior h2 {
     font-size: 32px;
